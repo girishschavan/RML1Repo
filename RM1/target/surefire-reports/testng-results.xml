@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5244" started-at="2016-07-13T04:41:32Z" finished-at="2016-07-13T04:41:37Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5244" started-at="2016-07-13T04:41:32Z" finished-at="2016-07-13T04:41:37Z">
+      <class name="prm.helloworld">
+        <test-method status="PASS" signature="setup()[pri:0, instance:prm.helloworld@5b464ce8]" name="setup" is-config="true" duration-ms="5219" started-at="2016-07-12T21:41:32Z" finished-at="2016-07-12T21:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testAllLinks()[pri:0, instance:prm.helloworld@5b464ce8]" name="testAllLinks" duration-ms="13" started-at="2016-07-12T21:41:37Z" finished-at="2016-07-12T21:41:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAllLinks -->
+      </class> <!-- prm.helloworld -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
