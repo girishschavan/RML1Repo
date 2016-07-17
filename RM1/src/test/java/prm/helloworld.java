@@ -31,7 +31,7 @@ public class helloworld {
 	public void testAllLinks() throws InterruptedException
 	{
 		System.out.println("inside test method");
-		/*System.setProperty("webdriver.chrome.driver", "C:\\Users\\Girish\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Girish\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-extensions");
 		driver = new ChromeDriver(options);
@@ -39,7 +39,7 @@ public class helloworld {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-	System.out.println(driver.getCurrentUrl());*/
+	System.out.println(driver.getCurrentUrl());
 		
 	}
 }
