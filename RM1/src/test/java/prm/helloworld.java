@@ -10,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
-
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -43,12 +44,24 @@ public class helloworld {
 				  .withEnvironment(ImmutableMap.of("DISPLAY",":10"))
 				  .build();
 				  service.start();
+				  
+
+				  DesiredCapabilities dc = DesiredCapabilities.chrome();
+				  ChromeOptions options = new ChromeOptions();
+
+				  options.addArguments("--start-maximized");
+				  dc.setCapability(ChromeOptions.CAPABILITY,options);
+				  
+				  driver = new RemoteWebDriver(service.getUrl(), dc);
+				  driver.get("http://www.google.com");
+				  //service.getUrl();
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Girish\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-extensions");
-		driver = new ChromeDriver(options);
+		//ChromeOptions options = new ChromeOptions();
+		//options.addArguments("--disable-extensions");
+		//driver = new ChromeDriver(options);
+		//http://localhost:5555/wd/hub
 		//driver = new HtmlUnitDriver();
-		driver.get("http://www.google.com");
+		//driver.get("http://www.google.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
